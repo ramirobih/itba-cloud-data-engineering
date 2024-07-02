@@ -2,9 +2,9 @@ FROM python:3.7-slim
 
 WORKDIR /app
 
-COPY insert_db.py /app/insert_db.py
-COPY requirements.txt /app/requirements.txt
+COPY . /app
 
 RUN pip install -r requirements.txt
 
-CMD ["python", "insert_db.py"]
+# Cambiar CMD para ejecutar `query_db.py` por defecto
+CMD ["python", "query_db.py"]
