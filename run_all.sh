@@ -11,7 +11,7 @@ sleep 10
 
 # Paso 3: Popular la base de datos
 docker build -t my_app .
-docker run --rm -e SCRIPT_TO_RUN=insert_db.py my_app
+docker run --rm --network itba-cloud-data-engineering_default -v .:/app my_app python3 /app/insert_db.py
 
 # Paso 4: Ejecutar consultas
-docker run --rm -e SCRIPT_TO_RUN=query_db.py my_app
+docker run --rm --network itba-cloud-data-engineering_default -v .:/app my_app python3 /app/query_db.py

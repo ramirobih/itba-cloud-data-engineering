@@ -11,10 +11,10 @@ Este dataset contiene información detallada sobre vuelos, incluyendo aerolínea
 - **DayOfWeek**: Día de la semana en que se realiza el vuelo (1 para lunes, 7 para domingo).
 - **Time**: Hora de vuelo en minutos pasados desde la medianoche.
 - **Length**: Duración del vuelo en minutos.
-- **Delay**: Retraso del vuelo en minutos.
+- **Delay**: Indica retraso de vuelo.
 
 ## Preguntas de Negocio
 1. ¿Cuál es la aerolínea con el mayor porcentaje de vuelos retrasados?
 2. ¿Qué día de la semana es más probable que ocurran retrasos?
-3. ¿Cómo varía la duración promedio de los retrasos en diferentes meses del año?
+3. ¿Cómo varía la duración promedio de los retrasos en diferentes dias de la semana?
 4. ¿Cuál es el aeropuerto con el mayor número de vuelos retrasados?
